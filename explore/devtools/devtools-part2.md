@@ -1,0 +1,4 @@
+# DevTools Part - Debugging
+#### All screenshots for section found in expand/screenshots
+1) The bug is that the result is ultimately a string because the two num's being collected are treated at strings, which causes the sum to be a concatenation of the two numbers as strings instead of the actual addition being performed to produce the actual sum. 
+2) To fix this bug, when result is being defined to `num1 + num2` can be set to `Number(num1) + Number(num2)` to ensure that the input numbers are treated as numbers and not strings so the sum results in the mathematical sum beign performed instead of string concatenation. The image of this fix can be found in the expand/screenshots directory. 
